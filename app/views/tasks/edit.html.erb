@@ -1,0 +1,10 @@
+<h1>Edit Task</h1>
+<%= form_for @task do |t| %>
+  <%= t.label :day %>
+  <%= t.text_field :day %>
+
+  <%= t.label :task %>
+  <%= t.text_field :task %>
+
+  <%= t.submit %>
+<% end %>
