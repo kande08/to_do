@@ -1,0 +1,10 @@
+<!-- <h1>Tasks#index</h1>
+<p>Find me in app/views/tasks/index.html.erb</p> -->
+
+<h1>Tasks</h1>
+<p><%= link_to "New Task", new_task_path %></p>
+<% @tasks.each do |task| %>
+  <h3><%= task.day %></h3>
+  <p><%= task.task %></p>
+  <%= link_to "Show Task", task_path(task) %>
+<% end %>
