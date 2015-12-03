@@ -8,4 +8,5 @@
   <p><%= task.task %></p>
   <%= link_to "Show Task", task_path(task) %>
   <%= link_to "Edit Task", edit_task_path(task) %>
+  <%= link_to "Delete Task", task, method: :delete %>
 <% end %>
